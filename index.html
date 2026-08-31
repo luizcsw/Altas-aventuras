@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trilhas e Montanhas</title>
+
+<!-- Ligação com o arquivo de estilos -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Cabeçalho do site -->
+  <header>
+    <h1>Trilhas e Montanhas</h1>
+    <p>Histórias de quem caminha pela natureza</p>
+  </header>
+
+  <main>
+    <!-- Artigo principal da página -->
+    <article>
+
+      <!-- Seção de introdução com os parágrafos -->
+      <section>
+        <h2>Sobre a trilha</h2>
+        <p>
+          A trilha da Serra Verde é um dos percursos mais procurados por quem
+          busca contato direto com a natureza. Com cerca de doze quilômetros,
+          o caminho passa por cachoeiras, mirantes e trechos densos de mata
+          fechada.
+        </p>
+        <p>
+          O ponto de partida fica na base da montanha, onde os visitantes
+          recebem orientações básicas de segurança antes de iniciar a
+          caminhada. A subida é gradual nos primeiros quilômetros, tornando-se
+          mais íngreme próximo ao topo.
+        </p>
+        <p>
+          Durante o percurso é comum avistar aves nativas e, em alguns
+          trechos, pequenos mamíferos que habitam a região. Recomenda-se levar
+          água suficiente, protetor solar e calçado adequado para terrenos
+          irregulares.
+        </p>
+        <p>
+          Ao chegar ao mirante final, a vista recompensa todo o esforço da
+          subida: um panorama completo do vale e das montanhas vizinhas,
+          especialmente bonito nas primeiras horas da manhã.
+        </p>
+      </section>
+
+      <!-- Primeira div: galeria com as duas imagens -->
+      <section>
+        <h2>Galeria</h2>
+        <div class="galeria">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80" alt="Trilha entre montanhas verdes">
+          <img src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?w=600&q=80" alt="Caminhante observando o vale ao entardecer">
+        </div>
+      </section>
+
+      <!-- Segunda div: bloco com o vídeo -->
+      <section>
+        <h2>Vídeo da trilha</h2>
+        <div class="bloco-video">
+          <video controls poster="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=800&q=80">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeo.
+          </video>
+        </div>
+      </section>
+
+      <!-- Botão de curtir -->
+      <div class="curtir-wrap">
+        <button id="botao-like" onclick="alternarCurtida()">🤍 Curtir</button>
+      </div>
+
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Trilhas e Montanhas — feito para quem ama caminhar.</p>
+  </footer>
+
+  <!-- Script simples para o botão de like -->
+  <script>
+    function alternarCurtida() {
+      const botao = document.getElementById('botao-like');
+      const curtido = botao.classList.toggle('curtido');
+      botao.textContent = curtido ? '❤️ Curtido' : '🤍 Curtir';
+    }
+  </script>
+
+</body>
+</html>
